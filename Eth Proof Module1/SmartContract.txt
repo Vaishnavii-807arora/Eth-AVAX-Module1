@@ -1,0 +1,25 @@
+pragma solidity ^0.8.0;
+
+contract ErrorHandlersExample {
+    uint public counter;
+
+    function increment(uint _value) public {
+        require(_value > 0, "Value must be greater than zero");
+        
+        counter += _value;
+    }
+
+    function decrement(uint _value) public {
+        if (_value > counter) {
+            revert("Value cannot exceed the current counter value");
+        }
+        
+        counter -= _value;
+    }
+
+    function resetCounter() public {
+        assert(counter >= 0);
+        
+        counter = 0;
+    }
+}
