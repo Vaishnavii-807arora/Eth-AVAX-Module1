@@ -52,4 +52,3 @@ Vaishnavi Arora
 
 ## License
 This contract is licensed under the MIT License. SPDX-License-Identifier: MIT.
-loom video link, https://www.loom.com/share/95fcdadff3414d09905e548cc0325628
